@@ -1,0 +1,40 @@
+@api = http://localhost:4000/products
+
+### Show all products
+
+GET {{api}}
+
+### Creating product
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Glasses",
+    "description": "Gaming glases",
+    "quantity": 16
+}
+
+### Showing Product
+
+GET {{api}}/3
+
+
+### Deleting a Product
+
+DELETE {{api}}/7
+
+### Count all products
+
+GET {{api}}/count
+
+### Update a product by Id
+
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "name": "Laptop Dell",
+    "description": "Gaming Laptop",
+    "quantity": 15
+}
